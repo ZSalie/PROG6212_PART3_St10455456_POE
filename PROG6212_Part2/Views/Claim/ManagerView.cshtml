@@ -1,0 +1,34 @@
+﻿@model List<PROG6212_Part2.Models.Claim>
+
+<h2>Manager Approval</h2>
+
+@if (!Model.Any())
+{
+    <p>No verified claims to approve.</p>
+}
+else
+{
+    foreach (var claim in Model.Where(c => c.Status == "Verified"))
+    {
+        <div class="card mb-3">
+            <div class="card-body">
+                <p><strong>Lecturer:</strong> @claim.LecturerName</p>
+                <p><strong>Department:</strong> @claim.Department</p>
+                <p><strong>Month:</strong> @claim.Month</p>
+                <p><strong>Course:</strong> @claim.CourseCode - @claim.CourseTitle</p>
+                <p><strong>Hours Worked:</strong> @claim.HoursWorked</p>
+                <p><strong>Rate:</strong> R@claim.Rate</p>
+                <p><strong>Total Amount:</strong> R@claim.TotalAmount.ToString("F2")</p>
+                <p><strong>Status:</strong> @claim.Status</p>
+                <p><strong>Notes:</strong> @claim.Notes</p>
+
+                <form asp-action="Approve" method="post" class="d-inline">
+                    <input type="hidden" name="id" value="@claim.ClaimID" />
+                    <button type="submit" class="btn btn-sm btn-success">Approve</button>
+                </form>
+
+                <a asp-controller="Claim" asp-action="Download" asp-route-id="@claim.ClaimID" class="btn btn-sm btn-outline-primary">Download</a>
+            </div>
+        </div>
+    }
+}

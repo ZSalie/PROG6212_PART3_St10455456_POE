@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Load Font Awesome (only needed if not already in _Layout.cshtml) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<div class="container mt-5">
+    <h1>Welcome to the Lecturer Claim Management System</h1>
+
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <i class="fas fa-file-upload fa-3x mb-3 text-primary"></i>
+                    <h5 class="card-title">Submit a Claim</h5>
+                    <p class="card-text">Upload your claim documents securely and track their status.</p>
+                    <a href="/Claim/Submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Submit
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <i class="fas fa-user-check fa-3x mb-3 text-success"></i>
+                    <h5 class="card-title">Manager Approval</h5>
+                    <p class="card-text">Managers can review and approve submitted claims.</p>
+                    <a href="/Manager/Review" class="btn btn-success">
+                        <i class="fas fa-thumbs-up"></i> Review
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <i class="fas fa-chart-line fa-3x mb-3 text-info"></i>
+                    <h5 class="card-title">Claim Analytics</h5>
+                    <p class="card-text">Coordinators can view claim summaries and monitor trends.</p>
+                    <a href="/Coordinator/Analytics" class="btn btn-info">
+                        <i class="fas fa-chart-bar"></i> View Stats
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

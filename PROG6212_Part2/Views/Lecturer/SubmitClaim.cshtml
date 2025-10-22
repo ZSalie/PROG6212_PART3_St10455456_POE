@@ -1,0 +1,63 @@
+﻿@model PROG6212_Part2.Models.Claim
+@{
+    var email = Context.Session.GetString("Email");
+    var lecturer = PROG6212_Part2.Controllers.LecturerController._lecturers
+        .FirstOrDefault(l => l.Email.ToLower() == email?.ToLower());
+}
+
+<h2>Submit Claim</h2>
+
+@if (lecturer != null)
+{
+    <form asp-action="SubmitClaim" method="post" enctype="multipart/form-data">
+        <input type="hidden" asp-for="LecturerName" value="@lecturer.FullName" />
+        <input type="hidden" asp-for="Department" value="@lecturer.Department" />
+
+        <label>Month:</label>
+        <select asp-for="Month" class="form-control">
+            <option value="">-- Select Month --</option>
+            @foreach (var month in System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.MonthNames.Take(12))
+            {
+                <option value="@month">@month</option>
+            }
+        </select><br />
+
+        <label>Course Code:</label>
+        <input asp-for="CourseCode" class="form-control" /><br />
+
+        <label>Course Title:</label>
+        <input asp-for="CourseTitle" class="form-control" /><br />
+
+        <label>Hours Worked:</label>
+        <input asp-for="HoursWorked" class="form-control" /><br />
+
+        <label>Hourly Rate:</label>
+        <input asp-for="Rate" class="form-control" /><br />
+
+        <label>Notes:</label>
+        <textarea asp-for="Notes" class="form-control"></textarea><br />
+
+        <label>Upload Document:</label>
+        <input type="file" name="uploadedFile" class="form-control" /><br />
+
+        @if (Model.HoursWorked > 0 && Model.Rate > 0)
+        {
+            <p><strong>Estimated Total:</strong> R@(Model.HoursWorked* Model.Rate)</p>
+        }
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+}
+else
+{
+    <p class="text-danger">Lecturer profile not found. Please log in again.</p>
+}
+
+@if (ViewBag.Message != null)
+{
+    <p style="color:green">@ViewBag.Message</p>
+}
+@if (ViewBag.Error != null)
+{
+    <p style="color:red">@ViewBag.Error</p>
+}

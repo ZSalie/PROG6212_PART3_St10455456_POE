@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9CF47860-2CEA-F379-09D8-9AEF27965D12}|Tests\\Tests.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\tests\\basicunittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CF47860-2CEA-F379-09D8-9AEF27965D12}|Tests\\Tests.csproj|solutionrelative:tests\\basicunittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\views\\hr\\lecturerclaimssummary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\views\\hr\\lecturerclaimssummary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -135,19 +139,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "BasicUnitTests.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\Tests\\BasicUnitTests.cs",
+              "RelativeDocumentMoniker": "Tests\\BasicUnitTests.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\Tests\\BasicUnitTests.cs",
+              "RelativeToolTip": "Tests\\BasicUnitTests.cs",
+              "ViewState": "AgIAANEBAAAAAAAAAAAgwNQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T19:20:56.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "LecturerClaimsSummary.cshtml",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\HR\\LecturerClaimsSummary.cshtml",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\HR\\LecturerClaimsSummary.cshtml",
-              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\HR\\LecturerClaimsSummary.cshtml*",
-              "RelativeToolTip": "PROG6212_Part2\\Views\\HR\\LecturerClaimsSummary.cshtml*",
-              "ViewState": "AgIAAMUAAAAANDMzM7MSwK0BAAABAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\HR\\LecturerClaimsSummary.cshtml",
+              "RelativeToolTip": "PROG6212_Part2\\Views\\HR\\LecturerClaimsSummary.cshtml",
+              "ViewState": "AgIAALwAAAAAmpmZmVkqwMsAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-11-21T17:42:38.828Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Dashboard.cshtml",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\HR\\Dashboard.cshtml",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\HR\\Dashboard.cshtml",
@@ -155,12 +172,11 @@
               "RelativeToolTip": "PROG6212_Part2\\Views\\HR\\Dashboard.cshtml",
               "ViewState": "AgIAABABAAAAAAAAAAAtwCABAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-21T12:51:15.129Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T12:51:15.129Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\User.cs",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Models\\User.cs",
@@ -168,12 +184,11 @@
               "RelativeToolTip": "PROG6212_Part2\\Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T06:57:51.37Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T06:57:51.37Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "CoordinatorView.cshtml",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Claim\\CoordinatorView.cshtml",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\Claim\\CoordinatorView.cshtml",
@@ -181,25 +196,23 @@
               "RelativeToolTip": "PROG6212_Part2\\Views\\Claim\\CoordinatorView.cshtml",
               "ViewState": "AgIAAFcAAAAAAAAAAAAkwHUAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-22T17:50:48.253Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T17:50:48.253Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "HRController.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Controllers\\HRController.cs",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Controllers\\HRController.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Controllers\\HRController.cs*",
-              "RelativeToolTip": "PROG6212_Part2\\Controllers\\HRController.cs*",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Controllers\\HRController.cs",
+              "RelativeToolTip": "PROG6212_Part2\\Controllers\\HRController.cs",
               "ViewState": "AgIAAJwBAAAAAAAAAAAowLoBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T07:03:28.843Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T07:03:28.843Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ManagerDashboardViewModel.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\ViewModel\\ManagerDashboardViewModel.cs",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Models\\ViewModel\\ManagerDashboardViewModel.cs",
@@ -207,12 +220,11 @@
               "RelativeToolTip": "PROG6212_Part2\\Models\\ViewModel\\ManagerDashboardViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T17:08:29.493Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T17:08:29.493Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\Shared\\_Layout.cshtml",
@@ -220,38 +232,35 @@
               "RelativeToolTip": "PROG6212_Part2\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAH8AAAAAAAAAAAAkwJ0AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-21T07:06:42.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T07:06:42.77Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\ViewModel\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Models\\ViewModel\\LoginViewModel.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\ViewModel\\LoginViewModel.cs*",
-              "RelativeToolTip": "PROG6212_Part2\\Models\\ViewModel\\LoginViewModel.cs*",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\ViewModel\\LoginViewModel.cs",
+              "RelativeToolTip": "PROG6212_Part2\\Models\\ViewModel\\LoginViewModel.cs",
               "ViewState": "AgIAAEIAAADwMTMzM7MowFgAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T07:01:18.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T07:01:18.547Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Claim.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\Claim.cs",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Models\\Claim.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\Claim.cs*",
-              "RelativeToolTip": "PROG6212_Part2\\Models\\Claim.cs*",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\Claim.cs",
+              "RelativeToolTip": "PROG6212_Part2\\Models\\Claim.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T17:44:21.286Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T17:44:21.286Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "HR.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\HR.cs",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Models\\HR.cs",
@@ -259,12 +268,11 @@
               "RelativeToolTip": "PROG6212_Part2\\Models\\HR.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T06:59:54.776Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T06:59:54.776Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "AddUser.cshtml",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\HR\\AddUser.cshtml",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\HR\\AddUser.cshtml",
@@ -272,12 +280,11 @@
               "RelativeToolTip": "PROG6212_Part2\\Views\\HR\\AddUser.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-21T12:54:09.194Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T12:54:09.194Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "LecturerController.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Controllers\\LecturerController.cs",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Controllers\\LecturerController.cs",
@@ -285,12 +292,11 @@
               "RelativeToolTip": "PROG6212_Part2\\Controllers\\LecturerController.cs",
               "ViewState": "AgIAAJAAAAAAAAAAAAAowK4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T17:43:10.945Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T17:43:10.945Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "SubmitClaim.cshtml",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Lecturer\\SubmitClaim.cshtml",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\Lecturer\\SubmitClaim.cshtml",
@@ -298,12 +304,11 @@
               "RelativeToolTip": "PROG6212_Part2\\Views\\Lecturer\\SubmitClaim.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAK8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-22T17:51:28.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T17:51:28.1Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ManagerDashboard.cshtml",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Claim\\ManagerDashboard.cshtml",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\Claim\\ManagerDashboard.cshtml",
@@ -311,12 +316,11 @@
               "RelativeToolTip": "PROG6212_Part2\\Views\\Claim\\ManagerDashboard.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAKMAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-21T17:09:34.528Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T17:09:34.528Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\Home\\Index.cshtml",
@@ -324,12 +328,11 @@
               "RelativeToolTip": "PROG6212_Part2\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-22T17:52:21.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T17:52:21.789Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ManagerView.cshtml",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Claim\\ManagerView.cshtml",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\Claim\\ManagerView.cshtml",
@@ -337,12 +340,11 @@
               "RelativeToolTip": "PROG6212_Part2\\Views\\Claim\\ManagerView.cshtml",
               "ViewState": "AgIAAFAAAAAAAAAAAAAkwG4AAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-22T17:50:55.788Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T17:50:55.788Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "ClaimController.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Controllers\\ClaimController.cs",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Controllers\\ClaimController.cs",
@@ -350,12 +352,11 @@
               "RelativeToolTip": "PROG6212_Part2\\Controllers\\ClaimController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T17:42:15.927Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T17:42:15.927Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Models\\ErrorViewModel.cs",
@@ -363,12 +364,11 @@
               "RelativeToolTip": "PROG6212_Part2\\Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T17:49:38.974Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T17:49:38.974Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Controllers\\AccountController.cs",
@@ -376,12 +376,11 @@
               "RelativeToolTip": "PROG6212_Part2\\Controllers\\AccountController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T17:41:50.921Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T17:41:50.921Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\Account\\Login.cshtml",
@@ -389,12 +388,11 @@
               "RelativeToolTip": "PROG6212_Part2\\Views\\Account\\Login.cshtml",
               "ViewState": "AgIAAEEAAAAAAAAAAGAwwGcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-22T17:50:23.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T17:50:23.787Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Program.cs",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Program.cs",
@@ -402,12 +400,11 @@
               "RelativeToolTip": "PROG6212_Part2\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T17:56:57.559Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T17:56:57.559Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Manager.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\Manager.cs",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Models\\Manager.cs",
@@ -415,12 +412,11 @@
               "RelativeToolTip": "PROG6212_Part2\\Models\\Manager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T17:45:58.891Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T17:45:58.891Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Lecturer.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\Lecturer.cs",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Models\\Lecturer.cs",
@@ -428,12 +424,11 @@
               "RelativeToolTip": "PROG6212_Part2\\Models\\Lecturer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T17:46:32.239Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T17:46:32.239Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Coordinator.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\Coordinator.cs",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Models\\Coordinator.cs",
@@ -441,12 +436,11 @@
               "RelativeToolTip": "PROG6212_Part2\\Models\\Coordinator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T17:44:50.297Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T17:44:50.297Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Controllers\\HomeController.cs",
@@ -454,12 +448,11 @@
               "RelativeToolTip": "PROG6212_Part2\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAiwB8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T06:01:56.353Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T06:01:56.353Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "ViewAllClaims.cshtml",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\HR\\ViewAllClaims.cshtml",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\HR\\ViewAllClaims.cshtml",
@@ -467,12 +460,11 @@
               "RelativeToolTip": "PROG6212_Part2\\Views\\HR\\ViewAllClaims.cshtml",
               "ViewState": "AgIAAL4AAACgZmZmZiYjwNEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-21T12:52:38.966Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T12:52:38.966Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "ManageUsers.cshtml",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\HR\\ManageUsers.cshtml",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\HR\\ManageUsers.cshtml",
@@ -480,12 +472,11 @@
               "RelativeToolTip": "PROG6212_Part2\\Views\\HR\\ManageUsers.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAANUBAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-21T12:53:28.386Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T12:53:28.386Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "EditUser.cshtml",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\HR\\EditUser.cshtml",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\HR\\EditUser.cshtml",
@@ -493,12 +484,11 @@
               "RelativeToolTip": "PROG6212_Part2\\Views\\HR\\EditUser.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAK8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-21T12:54:42.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T12:54:42.005Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\Home\\Privacy.cshtml",
@@ -506,12 +496,11 @@
               "RelativeToolTip": "PROG6212_Part2\\Views\\Home\\Privacy.cshtml",
               "ViewState": "AgIAAFAAAADgMzMzMzMuwFcAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-21T07:05:31.298Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T07:05:31.298Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "ViewClaims.cshtml",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Lecturer\\ViewClaims.cshtml",
               "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\Lecturer\\ViewClaims.cshtml",
@@ -519,8 +508,7 @@
               "RelativeToolTip": "PROG6212_Part2\\Views\\Lecturer\\ViewClaims.cshtml",
               "ViewState": "AgIAAFsAAAAAAAAAAAANwHIAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-22T17:51:36.09Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T17:51:36.09Z"
             }
           ]
         }

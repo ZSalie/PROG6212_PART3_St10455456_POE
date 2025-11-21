@@ -1,0 +1,530 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\views\\hr\\lecturerclaimssummary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\views\\hr\\lecturerclaimssummary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\models\\claim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\models\\claim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\controllers\\hrcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\controllers\\hrcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\views\\hr\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\views\\hr\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\models\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\models\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\models\\viewmodel\\managerdashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\models\\viewmodel\\managerdashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\views\\lecturer\\submitclaim.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\views\\lecturer\\submitclaim.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\views\\claim\\managerdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\views\\claim\\managerdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\views\\claim\\managerview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\views\\claim\\managerview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\views\\claim\\coordinatorview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\views\\claim\\coordinatorview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\controllers\\claimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\controllers\\claimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\views\\hr\\adduser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\views\\hr\\adduser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\models\\hr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\models\\hr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\controllers\\lecturercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\controllers\\lecturercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\models\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\models\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\models\\lecturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\models\\lecturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\models\\coordinator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\models\\coordinator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\views\\hr\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\views\\hr\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\views\\hr\\manageusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\views\\hr\\manageusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\views\\hr\\viewallclaims.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\views\\hr\\viewallclaims.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\views\\lecturer\\viewclaims.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\views\\lecturer\\viewclaims.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|c:\\users\\lab_services_student\\documents\\github\\prog_fixes\\prog6212_part2\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D25F374F-1E31-4121-823D-D853DCE79B7E}|PROG6212_Part2\\PROG6212_Part2.csproj|solutionrelative:prog6212_part2\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LecturerClaimsSummary.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\HR\\LecturerClaimsSummary.cshtml",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\HR\\LecturerClaimsSummary.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\HR\\LecturerClaimsSummary.cshtml",
+              "RelativeToolTip": "PROG6212_Part2\\Views\\HR\\LecturerClaimsSummary.cshtml",
+              "ViewState": "AgIAAMUAAAAANDMzM7MSwMsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T17:42:38.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\HR\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\HR\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\HR\\Dashboard.cshtml",
+              "RelativeToolTip": "PROG6212_Part2\\Views\\HR\\Dashboard.cshtml",
+              "ViewState": "AgIAABABAAAAAAAAAAAtwCABAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T12:51:15.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\User.cs",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\User.cs",
+              "RelativeToolTip": "PROG6212_Part2\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T06:57:51.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CoordinatorView.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Claim\\CoordinatorView.cshtml",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\Claim\\CoordinatorView.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Claim\\CoordinatorView.cshtml",
+              "RelativeToolTip": "PROG6212_Part2\\Views\\Claim\\CoordinatorView.cshtml",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAkwHUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-22T17:50:48.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HRController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Controllers\\HRController.cs",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Controllers\\HRController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Controllers\\HRController.cs",
+              "RelativeToolTip": "PROG6212_Part2\\Controllers\\HRController.cs",
+              "ViewState": "AgIAAJwBAAAAAAAAAAAowLoBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T07:03:28.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ManagerDashboardViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\ViewModel\\ManagerDashboardViewModel.cs",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Models\\ViewModel\\ManagerDashboardViewModel.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\ViewModel\\ManagerDashboardViewModel.cs",
+              "RelativeToolTip": "PROG6212_Part2\\Models\\ViewModel\\ManagerDashboardViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T17:08:29.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "PROG6212_Part2\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAkwJ0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T07:06:42.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\ViewModel\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Models\\ViewModel\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\ViewModel\\LoginViewModel.cs",
+              "RelativeToolTip": "PROG6212_Part2\\Models\\ViewModel\\LoginViewModel.cs",
+              "ViewState": "AgIAAEIAAADwMTMzM7MowFgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T07:01:18.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Claim.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\Claim.cs",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Models\\Claim.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\Claim.cs",
+              "RelativeToolTip": "PROG6212_Part2\\Models\\Claim.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T17:44:21.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HR.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\HR.cs",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Models\\HR.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\HR.cs",
+              "RelativeToolTip": "PROG6212_Part2\\Models\\HR.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T06:59:54.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AddUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\HR\\AddUser.cshtml",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\HR\\AddUser.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\HR\\AddUser.cshtml",
+              "RelativeToolTip": "PROG6212_Part2\\Views\\HR\\AddUser.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T12:54:09.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LecturerController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Controllers\\LecturerController.cs",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Controllers\\LecturerController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Controllers\\LecturerController.cs",
+              "RelativeToolTip": "PROG6212_Part2\\Controllers\\LecturerController.cs",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAowK4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T17:43:10.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SubmitClaim.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Lecturer\\SubmitClaim.cshtml",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\Lecturer\\SubmitClaim.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Lecturer\\SubmitClaim.cshtml",
+              "RelativeToolTip": "PROG6212_Part2\\Views\\Lecturer\\SubmitClaim.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-22T17:51:28.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ManagerDashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Claim\\ManagerDashboard.cshtml",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\Claim\\ManagerDashboard.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Claim\\ManagerDashboard.cshtml",
+              "RelativeToolTip": "PROG6212_Part2\\Views\\Claim\\ManagerDashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T17:09:34.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "PROG6212_Part2\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-22T17:52:21.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ManagerView.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Claim\\ManagerView.cshtml",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\Claim\\ManagerView.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Claim\\ManagerView.cshtml",
+              "RelativeToolTip": "PROG6212_Part2\\Views\\Claim\\ManagerView.cshtml",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAkwG4AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-22T17:50:55.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ClaimController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Controllers\\ClaimController.cs",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Controllers\\ClaimController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Controllers\\ClaimController.cs",
+              "RelativeToolTip": "PROG6212_Part2\\Controllers\\ClaimController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T17:42:15.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "PROG6212_Part2\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T17:49:38.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "PROG6212_Part2\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T17:41:50.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "PROG6212_Part2\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAEEAAAAAAAAAAGAwwGcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-22T17:50:23.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Program.cs",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Program.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Program.cs",
+              "RelativeToolTip": "PROG6212_Part2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T17:56:57.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Manager.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\Manager.cs",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Models\\Manager.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\Manager.cs",
+              "RelativeToolTip": "PROG6212_Part2\\Models\\Manager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T17:45:58.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Lecturer.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\Lecturer.cs",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Models\\Lecturer.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\Lecturer.cs",
+              "RelativeToolTip": "PROG6212_Part2\\Models\\Lecturer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T17:46:32.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Coordinator.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\Coordinator.cs",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Models\\Coordinator.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Models\\Coordinator.cs",
+              "RelativeToolTip": "PROG6212_Part2\\Models\\Coordinator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T17:44:50.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "PROG6212_Part2\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T06:01:56.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ViewAllClaims.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\HR\\ViewAllClaims.cshtml",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\HR\\ViewAllClaims.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\HR\\ViewAllClaims.cshtml",
+              "RelativeToolTip": "PROG6212_Part2\\Views\\HR\\ViewAllClaims.cshtml",
+              "ViewState": "AgIAAL4AAACgZmZmZiYjwNEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T12:52:38.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ManageUsers.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\HR\\ManageUsers.cshtml",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\HR\\ManageUsers.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\HR\\ManageUsers.cshtml",
+              "RelativeToolTip": "PROG6212_Part2\\Views\\HR\\ManageUsers.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANUBAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T12:53:28.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "EditUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\HR\\EditUser.cshtml",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\HR\\EditUser.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\HR\\EditUser.cshtml",
+              "RelativeToolTip": "PROG6212_Part2\\Views\\HR\\EditUser.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T12:54:42.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "PROG6212_Part2\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAFAAAADgMzMzMzMuwFcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T07:05:31.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ViewClaims.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Lecturer\\ViewClaims.cshtml",
+              "RelativeDocumentMoniker": "PROG6212_Part2\\Views\\Lecturer\\ViewClaims.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\Prog_Fixes\\PROG6212_Part2\\Views\\Lecturer\\ViewClaims.cshtml",
+              "RelativeToolTip": "PROG6212_Part2\\Views\\Lecturer\\ViewClaims.cshtml",
+              "ViewState": "AgIAAFsAAAAAAAAAAAANwHIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-22T17:51:36.09Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

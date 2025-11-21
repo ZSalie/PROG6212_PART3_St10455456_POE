@@ -2,6 +2,8 @@ wwwroot\css\site.css
 wwwroot\encrypted\.gitkeep
 wwwroot\encrypted\0ec5161e-848b-4240-8688-93261e05e69b_CLDV6212 POE Part 3.pdf
 wwwroot\encrypted\3f4f1c8d-a899-40aa-b6fe-43eae43d807a_Lecturer Claim January.pdf
+wwwroot\encrypted\8595b515-c3fd-47de-adcd-62fa3deaf51e_Lecturer Claim January.pdf
+wwwroot\encrypted\afd2e909-aa0c-4789-a9e6-63ed249b9eaf_Lecturer Claim October.pdf
 wwwroot\favicon.ico
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css

@@ -1,0 +1,176 @@
+﻿@model PROG6212_Part2.Models.UserViewModel
+
+@{
+    var userType = ViewBag.UserType as string ?? "user";
+    ViewData["Title"] = $"Edit {userType}";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-warning text-white">
+                    <h3 class="card-title mb-0">
+                        <i class="fas fa-user-edit me-2"></i>Edit @userType
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="id" value="@Model.ID" />
+
+                        <div class="alert alert-info">
+                            <i class="fas fa-info-circle me-2"></i>
+                            <strong>Editing:</strong> @Model.FullName (@Model.Email)
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="FullName" class="form-label">
+                                        <i class="fas fa-user me-1"></i>Full Name *
+                                    </label>
+                                    <input type="text" id="FullName" name="FullName" class="form-control"
+                                           value="@Model.FullName" required>
+                                    <div class="invalid-feedback">Please provide a full name.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="Email" class="form-label">
+                                        <i class="fas fa-envelope me-1"></i>Email *
+                                    </label>
+                                    <input type="email" id="Email" name="Email" class="form-control"
+                                           value="@Model.Email" required>
+                                    <div class="invalid-feedback">Please provide a valid email address.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="Password" class="form-label">
+                                        <i class="fas fa-lock me-1"></i>New Password
+                                    </label>
+                                    <input type="password" id="Password" name="Password" class="form-control"
+                                           placeholder="Leave blank to keep current password">
+                                    <div class="form-text">Only enter a new password if you want to change it.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="Department" class="form-label">
+                                        <i class="fas fa-building me-1"></i>Department *
+                                    </label>
+                                    <input type="text" id="Department" name="Department" class="form-control"
+                                           value="@Model.Department" required>
+                                    <div class="invalid-feedback">Please provide a department.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        @if (userType.ToLower() == "lecturer")
+                        {
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="PhoneNumber" class="form-label">
+                                            <i class="fas fa-phone me-1"></i>Phone Number
+                                        </label>
+                                        <input type="text" id="PhoneNumber" name="PhoneNumber" class="form-control"
+                                               value="@Model.PhoneNumber">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="Faculty" class="form-label">
+                                            <i class="fas fa-graduation-cap me-1"></i>Faculty
+                                        </label>
+                                        <input type="text" id="Faculty" name="Faculty" class="form-control"
+                                               value="@Model.Faculty">
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                        @if (userType.ToLower() == "manager")
+                        {
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="Faculty" class="form-label">
+                                            <i class="fas fa-graduation-cap me-1"></i>Faculty *
+                                        </label>
+                                        <input type="text" id="Faculty" name="Faculty" class="form-control"
+                                               value="@Model.Faculty" required>
+                                        <div class="invalid-feedback">Please provide a faculty.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                        <div class="row mt-4">
+                            <div class="col-12">
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <a href="@Url.Action("ManageUsers")" class="btn btn-outline-secondary me-md-2">
+                                        <i class="fas fa-arrow-left me-1"></i>Back to Users
+                                    </a>
+                                    <button type="submit" class="btn btn-warning">
+                                        <i class="fas fa-save me-1"></i>Update @userType
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Danger Zone -->
+            @if (userType.ToLower() != "hr" || Model.ID != 1)
+            {
+                <div class="card border-danger mt-4">
+                    <div class="card-header bg-danger text-white">
+                        <h6 class="mb-0">
+                            <i class="fas fa-exclamation-triangle me-2"></i>Danger Zone
+                        </h6>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-muted">
+                            Once you delete a user, there is no going back. Please be certain.
+                        </p>
+                        <form method="post" action="@Url.Action("DeleteUser")" class="d-inline">
+                            <input type="hidden" name="userType" value="@userType" />
+                            <input type="hidden" name="id" value="@Model.ID" />
+                            <button type="submit" class="btn btn-danger"
+                                    onclick="return confirm('Are you absolutely sure you want to delete this user? This action cannot be undone.')">
+                                <i class="fas fa-trash me-1"></i>Delete this @userType
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        // Bootstrap form validation
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+}

@@ -1,36 +1,53 @@
-namespace PROG6212_Part2
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Http.Features;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddControllersWithViews();
+
+// ADD THIS: Configure file upload limits (5MB)
+builder.Services.Configure<FormOptions>(options =>
 {
-    public class Program
-    {
-        public static void Main(string[] args)
-        {
-            var builder = WebApplication.CreateBuilder(args);
+    options.MultipartBodyLengthLimit = 5242880; // 5MB
+});
 
-            // Add services to the container.
-            builder.Services.AddControllersWithViews();
-            builder.Services.AddSession(); // Enable session support
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 
-            var app = builder.Build();
+var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
-            if (!app.Environment.IsDevelopment())
-            {
-                app.UseExceptionHandler("/Home/Error");
-                app.UseHsts(); // Enforce HTTPS for production
-            }
-
-            app.UseHttpsRedirection();
-            app.UseStaticFiles(); // Serve files from wwwroot
-
-            app.UseRouting();
-            app.UseSession(); // Enable session middleware
-            app.UseAuthorization();
-
-            app.MapControllerRoute(
-                name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
-
-            app.Run();
-        }
-    }
+// Configure the HTTP request pipeline.
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Home/Error");
+    app.UseHsts();
 }
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+app.UseRouting();
+app.UseAuthorization();
+
+app.UseSession();
+
+// ADD THIS: Ensure encrypted directory exists
+var encryptedDir = Path.Combine(app.Environment.WebRootPath, "encrypted");
+if (!Directory.Exists(encryptedDir))
+{
+    Directory.CreateDirectory(encryptedDir);
+}
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.Run();

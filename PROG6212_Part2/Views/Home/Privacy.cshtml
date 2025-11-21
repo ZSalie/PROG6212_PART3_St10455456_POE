@@ -1,6 +1,88 @@
 ﻿@{
     ViewData["Title"] = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="card-title mb-0">
+                        <i class="fas fa-shield-alt me-2"></i>Privacy Policy
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h4>Data Protection and Privacy</h4>
+                            <p>
+                                The College Claims System is committed to protecting your privacy and ensuring
+                                the security of your personal information. This policy outlines how we collect,
+                                use, and protect your data.
+                            </p>
+
+                            <h5 class="mt-4">Information We Collect</h5>
+                            <ul>
+                                <li>Personal identification information (Name, email address, contact details)</li>
+                                <li>Professional information (Department, faculty, position)</li>
+                                <li>Claim-related data (Hours worked, rates, supporting documents)</li>
+                                <li>System usage data and login information</li>
+                            </ul>
+
+                            <h5 class="mt-4">How We Use Your Information</h5>
+                            <ul>
+                                <li>Process and manage claims efficiently</li>
+                                <li>Verify user identities and maintain system security</li>
+                                <li>Generate reports and analytics</li>
+                                <li>Improve system functionality and user experience</li>
+                            </ul>
+
+                            <h5 class="mt-4">Data Security</h5>
+                            <p>
+                                We implement appropriate security measures to protect your personal information
+                                against unauthorized access, alteration, disclosure, or destruction. All sensitive
+                                data is encrypted and stored securely.
+                            </p>
+
+                            <h5 class="mt-4">Data Retention</h5>
+                            <p>
+                                We retain personal information only for as long as necessary to fulfill the purposes
+                                outlined in this policy, unless a longer retention period is required by law.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h6><i class="fas fa-info-circle me-2 text-primary"></i>Quick Info</h6>
+                                    <p class="small mb-2"><strong>System:</strong> College Claims System</p>
+                                    <p class="small mb-2"><strong>Version:</strong> 2.0</p>
+                                    <p class="small mb-2"><strong>Last Updated:</strong> @DateTime.Now.ToString("MMMM yyyy")</p>
+                                    <p class="small mb-0"><strong>Contact:</strong> admin@college.ac.za</p>
+                                </div>
+                            </div>
+
+                            <div class="card mt-4">
+                                <div class="card-body">
+                                    <h6><i class="fas fa-user-shield me-2 text-success"></i>Your Rights</h6>
+                                    <ul class="small">
+                                        <li>Right to access your personal data</li>
+                                        <li>Right to correct inaccurate data</li>
+                                        <li>Right to request data deletion</li>
+                                        <li>Right to restrict processing</li>
+                                        <li>Right to data portability</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-info mt-4">
+                        <i class="fas fa-exclamation-circle me-2"></i>
+                        <strong>Note:</strong> This privacy policy may be updated periodically.
+                        Please check this page regularly for any changes.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

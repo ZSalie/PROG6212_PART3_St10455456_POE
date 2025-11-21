@@ -1,51 +1,103 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<!-- Load Font Awesome (only needed if not already in _Layout.cshtml) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
 <div class="container mt-5">
-    <h1>Welcome to the Lecturer Claim Management System</h1>
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <h1 class="display-4 fw-bold text-primary mb-4">
+                Welcome to College Claims System
+            </h1>
+            <p class="lead mb-4">
+                Streamline your claim submission and management process with our comprehensive platform.
+                Designed for lecturers, coordinators, managers, and HR professionals.
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="/Account/Login" class="btn btn-primary btn-lg px-4 me-md-2">
+                    <i class="fas fa-sign-in-alt me-2"></i>Get Started
+                </a>
+                <a href="#features" class="btn btn-outline-secondary btn-lg px-4">
+                    Learn More
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <img src="https://via.placeholder.com/500x300/007bff/ffffff?text=College+Claims+System"
+                 class="img-fluid rounded shadow" alt="College Claims System">
+        </div>
+    </div>
 
-    <div class="row mt-4">
-        <div class="col-md-4">
-            <div class="card text-center">
-                <div class="card-body">
-                    <i class="fas fa-file-upload fa-3x mb-3 text-primary"></i>
-                    <h5 class="card-title">Submit a Claim</h5>
-                    <p class="card-text">Upload your claim documents securely and track their status.</p>
-                    <a href="/Claim/Submit" class="btn btn-primary">
-                        <i class="fas fa-paper-plane"></i> Submit
-                    </a>
+    <!-- Features Section -->
+    <div id="features" class="row mt-5 pt-5">
+        <div class="col-12 text-center mb-5">
+            <h2 class="fw-bold">System Features</h2>
+            <p class="text-muted">Comprehensive claim management for all user roles</p>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="feature-icon bg-primary rounded-circle p-3 mb-3 mx-auto">
+                        <i class="fas fa-user-graduate fa-2x text-white"></i>
+                    </div>
+                    <h5 class="card-title">For Lecturers</h5>
+                    <p class="card-text text-muted">
+                        Submit claims, track status, and manage your teaching hours efficiently.
+                    </p>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-4">
-            <div class="card text-center">
-                <div class="card-body">
-                    <i class="fas fa-user-check fa-3x mb-3 text-success"></i>
-                    <h5 class="card-title">Manager Approval</h5>
-                    <p class="card-text">Managers can review and approve submitted claims.</p>
-                    <a href="/Manager/Review" class="btn btn-success">
-                        <i class="fas fa-thumbs-up"></i> Review
-                    </a>
+        <div class="col-md-3 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="feature-icon bg-success rounded-circle p-3 mb-3 mx-auto">
+                        <i class="fas fa-user-tie fa-2x text-white"></i>
+                    </div>
+                    <h5 class="card-title">For Coordinators</h5>
+                    <p class="card-text text-muted">
+                        Verify claims and ensure accuracy before manager approval.
+                    </p>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-4">
-            <div class="card text-center">
-                <div class="card-body">
-                    <i class="fas fa-chart-line fa-3x mb-3 text-info"></i>
-                    <h5 class="card-title">Claim Analytics</h5>
-                    <p class="card-text">Coordinators can view claim summaries and monitor trends.</p>
-                    <a href="/Coordinator/Analytics" class="btn btn-info">
-                        <i class="fas fa-chart-bar"></i> View Stats
-                    </a>
+        <div class="col-md-3 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="feature-icon bg-warning rounded-circle p-3 mb-3 mx-auto">
+                        <i class="fas fa-user-cog fa-2x text-white"></i>
+                    </div>
+                    <h5 class="card-title">For Managers</h5>
+                    <p class="card-text text-muted">
+                        Approve verified claims and manage departmental budgets.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="feature-icon bg-info rounded-circle p-3 mb-3 mx-auto">
+                        <i class="fas fa-users-cog fa-2x text-white"></i>
+                    </div>
+                    <h5 class="card-title">For HR</h5>
+                    <p class="card-text text-muted">
+                        Comprehensive user management and system oversight.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<style>
+    .feature-icon {
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>

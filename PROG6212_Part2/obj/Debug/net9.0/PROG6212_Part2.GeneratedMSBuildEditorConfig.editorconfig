@@ -9,61 +9,89 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PROG6212_Part2
 build_property.RootNamespace = PROG6212_Part2
-build_property.ProjectDir = C:\Users\lab_services_student\source\repos\PROG6212_Part2\PROG6212_Part2\
+build_property.ProjectDir = C:\Users\lab_services_student\Documents\GitHub\Prog_Fixes\PROG6212_Part2\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\lab_services_student\source\repos\PROG6212_Part2\PROG6212_Part2
+build_property.MSBuildProjectDirectory = C:\Users\lab_services_student\Documents\GitHub\Prog_Fixes\PROG6212_Part2
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/lab_services_student/source/repos/PROG6212_Part2/PROG6212_Part2/Views/Account/Login.cshtml]
+[C:/Users/lab_services_student/Documents/GitHub/Prog_Fixes/PROG6212_Part2/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/source/repos/PROG6212_Part2/PROG6212_Part2/Views/Claim/CoordinatorView.cshtml]
+[C:/Users/lab_services_student/Documents/GitHub/Prog_Fixes/PROG6212_Part2/Views/Claim/CoordinatorView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhaW1cQ29vcmRpbmF0b3JWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/source/repos/PROG6212_Part2/PROG6212_Part2/Views/Claim/ManagerView.cshtml]
+[C:/Users/lab_services_student/Documents/GitHub/Prog_Fixes/PROG6212_Part2/Views/Claim/ManagerDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhaW1cTWFuYWdlckRhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/Documents/GitHub/Prog_Fixes/PROG6212_Part2/Views/Claim/ManagerView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhaW1cTWFuYWdlclZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/source/repos/PROG6212_Part2/PROG6212_Part2/Views/Home/Index.cshtml]
+[C:/Users/lab_services_student/Documents/GitHub/Prog_Fixes/PROG6212_Part2/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/source/repos/PROG6212_Part2/PROG6212_Part2/Views/Home/Privacy.cshtml]
+[C:/Users/lab_services_student/Documents/GitHub/Prog_Fixes/PROG6212_Part2/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/source/repos/PROG6212_Part2/PROG6212_Part2/Views/Lecturer/SubmitClaim.cshtml]
+[C:/Users/lab_services_student/Documents/GitHub/Prog_Fixes/PROG6212_Part2/Views/HR/AddUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSFJcQWRkVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/Documents/GitHub/Prog_Fixes/PROG6212_Part2/Views/HR/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSFJcRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/Documents/GitHub/Prog_Fixes/PROG6212_Part2/Views/HR/EditUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSFJcRWRpdFVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/Documents/GitHub/Prog_Fixes/PROG6212_Part2/Views/HR/LecturerClaimsSummary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSFJcTGVjdHVyZXJDbGFpbXNTdW1tYXJ5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/Documents/GitHub/Prog_Fixes/PROG6212_Part2/Views/HR/ManageUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSFJcTWFuYWdlVXNlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/Documents/GitHub/Prog_Fixes/PROG6212_Part2/Views/HR/ViewAllClaims.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSFJcVmlld0FsbENsYWltcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/Documents/GitHub/Prog_Fixes/PROG6212_Part2/Views/Lecturer/SubmitClaim.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVjdHVyZXJcU3VibWl0Q2xhaW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/source/repos/PROG6212_Part2/PROG6212_Part2/Views/Lecturer/ViewClaims.cshtml]
+[C:/Users/lab_services_student/Documents/GitHub/Prog_Fixes/PROG6212_Part2/Views/Lecturer/ViewClaims.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVjdHVyZXJcVmlld0NsYWltcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/source/repos/PROG6212_Part2/PROG6212_Part2/Views/Shared/Error.cshtml]
+[C:/Users/lab_services_student/Documents/GitHub/Prog_Fixes/PROG6212_Part2/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/source/repos/PROG6212_Part2/PROG6212_Part2/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/lab_services_student/Documents/GitHub/Prog_Fixes/PROG6212_Part2/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/source/repos/PROG6212_Part2/PROG6212_Part2/Views/_ViewImports.cshtml]
+[C:/Users/lab_services_student/Documents/GitHub/Prog_Fixes/PROG6212_Part2/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/source/repos/PROG6212_Part2/PROG6212_Part2/Views/_ViewStart.cshtml]
+[C:/Users/lab_services_student/Documents/GitHub/Prog_Fixes/PROG6212_Part2/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/source/repos/PROG6212_Part2/PROG6212_Part2/Views/Shared/_Layout.cshtml]
+[C:/Users/lab_services_student/Documents/GitHub/Prog_Fixes/PROG6212_Part2/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-jc5usleg4k

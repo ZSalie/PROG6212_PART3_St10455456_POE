@@ -1,0 +1,196 @@
+﻿@model PROG6212_Part2.Models.UserViewModel
+
+@{
+    // Handle null model
+    var viewModel = Model ?? new UserViewModel();
+    var userType = ViewBag.UserType as string ?? "user";
+    var isEdit = viewModel.ID > 0;
+    ViewData["Title"] = $"{(isEdit ? "Edit" : "Add")} {userType}";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="card-title mb-0">
+                        <i class="fas fa-user-plus me-2"></i>@(isEdit ? "Edit" : "Add") @userType
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        @Html.AntiForgeryToken()
+
+                        @if (isEdit)
+                        {
+                            <input type="hidden" name="id" value="@viewModel.ID" />
+                        }
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="FullName" class="form-label">
+                                        <i class="fas fa-user me-1"></i>Full Name *
+                                    </label>
+                                    <input type="text" id="FullName" name="FullName" class="form-control"
+                                           value="@viewModel.FullName" required>
+                                    <div class="invalid-feedback">Please provide a full name.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="Email" class="form-label">
+                                        <i class="fas fa-envelope me-1"></i>Email *
+                                    </label>
+                                    <input type="email" id="Email" name="Email" class="form-control"
+                                           value="@viewModel.Email" required>
+                                    <div class="invalid-feedback">Please provide a valid email address.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="Password" class="form-label">
+                                        <i class="fas fa-lock me-1"></i>Password @(isEdit ? "(leave blank to keep current)" : "*")
+                                    </label>
+                                    <input type="password" id="Password" name="Password" class="form-control"
+                                           @(!isEdit ? "required" : "")>
+                                    @if (!isEdit)
+                                    {
+                                        <div class="invalid-feedback">Please provide a password.</div>
+                                    }
+                                    <div class="form-text">@(isEdit ? "Only enter a new password if you want to change it." : "Password must be at least 6 characters long.")</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="Department" class="form-label">
+                                        <i class="fas fa-building me-1"></i>Department *
+                                    </label>
+                                    <input type="text" id="Department" name="Department" class="form-control"
+                                           value="@viewModel.Department" required>
+                                    <div class="invalid-feedback">Please provide a department.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        @if (userType.ToLower() == "lecturer")
+                        {
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="PhoneNumber" class="form-label">
+                                            <i class="fas fa-phone me-1"></i>Phone Number
+                                        </label>
+                                        <input type="text" id="PhoneNumber" name="PhoneNumber" class="form-control"
+                                               value="@viewModel.PhoneNumber" placeholder="Optional">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="Faculty" class="form-label">
+                                            <i class="fas fa-graduation-cap me-1"></i>Faculty
+                                        </label>
+                                        <input type="text" id="Faculty" name="Faculty" class="form-control"
+                                               value="@viewModel.Faculty" placeholder="Optional">
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                        @if (userType.ToLower() == "manager")
+                        {
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="Faculty" class="form-label">
+                                            <i class="fas fa-graduation-cap me-1"></i>Faculty *
+                                        </label>
+                                        <input type="text" id="Faculty" name="Faculty" class="form-control"
+                                               value="@viewModel.Faculty" required>
+                                        <div class="invalid-feedback">Please provide a faculty.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                        <div class="row mt-4">
+                            <div class="col-12">
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <a href="@Url.Action("ManageUsers")" class="btn btn-outline-secondary me-md-2">
+                                        <i class="fas fa-arrow-left me-1"></i>Cancel
+                                    </a>
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="fas fa-save me-1"></i>@(isEdit ? "Update" : "Create") @userType
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- User Type Info Card -->
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h6 class="card-title">
+                        <i class="fas fa-info-circle me-2 text-info"></i>About @userType Users
+                    </h6>
+                    <p class="card-text small">
+                        @if (userType.ToLower() == "lecturer")
+                        {
+                            <text>
+                                Lecturers can submit claims for teaching hours and view their claim history.
+                                They have access to the claim submission form and their personal claim records.
+                            </text>
+                        }
+                        else if (userType.ToLower() == "coordinator")
+                        {
+                            <text>
+                                Coordinators verify submitted claims before they are sent to managers for approval.
+                                They can download supporting documents and either verify or reject claims.
+                            </text>
+                        }
+                        else if (userType.ToLower() == "manager")
+                        {
+                            <text>
+                                Managers approve verified claims and monitor the claims process.
+                                They have final approval authority for all claims in their faculty.
+                            </text>
+                        }
+                        else if (userType.ToLower() == "hr")
+                        {
+                            <text>
+                                HR staff have full system access including user management, analytics,
+                                and comprehensive reporting capabilities.
+                            </text>
+                        }
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        // Bootstrap form validation
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+}

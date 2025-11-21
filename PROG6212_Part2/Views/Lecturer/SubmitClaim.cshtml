@@ -1,63 +1,315 @@
 ﻿@model PROG6212_Part2.Models.Claim
+
 @{
-    var email = Context.Session.GetString("Email");
-    var lecturer = PROG6212_Part2.Controllers.LecturerController._lecturers
-        .FirstOrDefault(l => l.Email.ToLower() == email?.ToLower());
+    ViewData["Title"] = "Submit Claim";
 }
 
-<h2>Submit Claim</h2>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="card-title mb-0">
+                        <i class="fas fa-plus-circle me-2"></i>Submit New Claim
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <form method="post" asp-action="SubmitClaim" enctype="multipart/form-data" id="claimForm">
+                        @Html.AntiForgeryToken()
 
-@if (lecturer != null)
-{
-    <form asp-action="SubmitClaim" method="post" enctype="multipart/form-data">
-        <input type="hidden" asp-for="LecturerName" value="@lecturer.FullName" />
-        <input type="hidden" asp-for="Department" value="@lecturer.Department" />
+                        <!-- Validation Summary -->
+                        @if (!ViewData.ModelState.IsValid)
+                        {
+                            <div class="alert alert-danger">
+                                <i class="fas fa-exclamation-triangle me-2"></i>Please correct the validation errors below.
+                            </div>
+                        }
 
-        <label>Month:</label>
-        <select asp-for="Month" class="form-control">
-            <option value="">-- Select Month --</option>
-            @foreach (var month in System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.MonthNames.Take(12))
-            {
-                <option value="@month">@month</option>
+                        @if (ViewBag.Message != null)
+                        {
+                            <div class="alert alert-success">
+                                <i class="fas fa-check-circle me-2"></i>@ViewBag.Message
+                            </div>
+                        }
+
+                        @if (ViewBag.Error != null)
+                        {
+                            <div class="alert alert-danger">
+                                <i class="fas fa-exclamation-circle me-2"></i>@ViewBag.Error
+                            </div>
+                        }
+
+                        <hr>
+
+                        <div class="row">
+                            <!-- Left Column -->
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Lecturer Name</label>
+                                    <p class="form-control-plaintext border-bottom pb-2">@Model.LecturerName</p>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label asp-for="Month" class="form-label fw-bold">Month *</label>
+                                    <select asp-for="Month" class="form-select" required>
+                                        <option value="">Select Month</option>
+                                        <option value="January">January</option>
+                                        <option value="February">February</option>
+                                        <option value="March">March</option>
+                                        <option value="April">April</option>
+                                        <option value="May">May</option>
+                                        <option value="June">June</option>
+                                        <option value="July">July</option>
+                                        <option value="August">August</option>
+                                        <option value="September">September</option>
+                                        <option value="October">October</option>
+                                        <option value="November">November</option>
+                                        <option value="December">December</option>
+                                    </select>
+                                    <span asp-validation-for="Month" class="text-danger small"></span>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label asp-for="CourseCode" class="form-label fw-bold">Course Code *</label>
+                                    <input asp-for="CourseCode" class="form-control" placeholder="e.g., PROG6212" maxlength="20" required />
+                                    <span asp-validation-for="CourseCode" class="text-danger small"></span>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label asp-for="CourseTitle" class="form-label fw-bold">Course Title *</label>
+                                    <input asp-for="CourseTitle" class="form-control" placeholder="e.g., Programming" maxlength="100" required />
+                                    <span asp-validation-for="CourseTitle" class="text-danger small"></span>
+                                </div>
+                            </div>
+
+                            <!-- Right Column -->
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Department</label>
+                                    <p class="form-control-plaintext border-bottom pb-2">@Model.Department</p>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label asp-for="HoursWorked" class="form-label fw-bold">Hours Worked *</label>
+                                    <input asp-for="HoursWorked" type="number" step="0.5" min="0.5" max="200"
+                                           class="form-control" placeholder="Enter hours worked"
+                                           oninput="validateNumber(this, 0.5, 200)" required />
+                                    <div class="form-text">Minimum 0.5 hours, maximum 200 hours</div>
+                                    <span asp-validation-for="HoursWorked" class="text-danger small"></span>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label asp-for="Rate" class="form-label fw-bold">Hourly Rate *</label>
+                                    <input asp-for="Rate" type="number" step="1" min="1" max="1000"
+                                           class="form-control" placeholder="Enter hourly rate"
+                                           oninput="validateNumber(this, 1, 1000)" required />
+                                    <div class="form-text">Minimum R1, maximum R1000 per hour</div>
+                                    <span asp-validation-for="Rate" class="text-danger small"></span>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Total Amount</label>
+                                    <div class="border rounded p-3 bg-light">
+                                        <h4 class="text-success mb-0 text-center" id="totalAmountDisplay">
+                                            R 0.00
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Notes -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label asp-for="Notes" class="form-label fw-bold">Notes</label>
+                                    <textarea asp-for="Notes" class="form-control" rows="3" placeholder="Additional notes (optional)" maxlength="500"></textarea>
+                                    <div class="form-text">Maximum 500 characters</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Supporting Document -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="mb-4">
+                                    <label class="form-label fw-bold">Supporting Document *</label>
+                                    <input type="file" name="uploadedFile" id="uploadedFile" class="form-control"
+                                           accept=".pdf,.docx,.xlsx" required />
+                                    <div class="form-text">
+                                        Allowed file types: PDF, DOCX, XLSX (Max: 5MB)
+                                    </div>
+                                    <!-- File validation errors -->
+                                    <div id="fileError" class="text-danger small mt-1"></div>
+                                    @if (ViewData.ModelState["uploadedFile"]?.Errors.Count > 0)
+                                    {
+                                        <div class="text-danger small mt-1">
+                                            @ViewData.ModelState["uploadedFile"]?.Errors.First().ErrorMessage
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="d-grid mt-4">
+                            <button type="submit" class="btn btn-primary btn-lg" id="submitButton">
+                                <i class="fas fa-paper-plane me-2"></i>Submit Claim
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('claimForm');
+            const fileInput = document.getElementById('uploadedFile');
+            const fileError = document.getElementById('fileError');
+            const submitButton = document.getElementById('submitButton');
+
+            
+            const hoursInput = document.querySelector('input[name="HoursWorked"]');
+            const rateInput = document.querySelector('input[name="Rate"]');
+            const totalDisplay = document.getElementById('totalAmountDisplay');
+
+            function calculateTotal() {
+                const hours = parseFloat(hoursInput.value) || 0;
+                const rate = parseFloat(rateInput.value) || 0;
+
+                
+                if (hours < 0.5 || hours > 200 || rate < 1 || rate > 1000) {
+                    totalDisplay.textContent = 'R 0.00';
+                    return;
+                }
+
+                const total = hours * rate;
+                totalDisplay.textContent = 'R ' + total.toLocaleString('en-ZA', {
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2
+                });
             }
-        </select><br />
 
-        <label>Course Code:</label>
-        <input asp-for="CourseCode" class="form-control" /><br />
+            if (hoursInput && rateInput && totalDisplay) {
+                hoursInput.addEventListener('input', calculateTotal);
+                rateInput.addEventListener('input', calculateTotal);
+                calculateTotal(); // Initialize
+            }
 
-        <label>Course Title:</label>
-        <input asp-for="CourseTitle" class="form-control" /><br />
+            
+            window.validateNumber = function(input, min, max) {
+                let value = parseFloat(input.value);
 
-        <label>Hours Worked:</label>
-        <input asp-for="HoursWorked" class="form-control" /><br />
+                if (isNaN(value)) {
+                    input.value = '';
+                    calculateTotal();
+                    return;
+                }
 
-        <label>Hourly Rate:</label>
-        <input asp-for="Rate" class="form-control" /><br />
+                
+                if (value > 9999) {
+                    value = max;
+                }
 
-        <label>Notes:</label>
-        <textarea asp-for="Notes" class="form-control"></textarea><br />
+                
+                if (value < min) {
+                    input.value = min;
+                } else if (value > max) {
+                    input.value = max;
+                } else {
+                    input.value = value;
+                }
 
-        <label>Upload Document:</label>
-        <input type="file" name="uploadedFile" class="form-control" /><br />
+                calculateTotal();
+            };
 
-        @if (Model.HoursWorked > 0 && Model.Rate > 0)
-        {
-            <p><strong>Estimated Total:</strong> R@(Model.HoursWorked* Model.Rate)</p>
-        }
+           
+            if (fileInput) {
+                fileInput.addEventListener('change', function() {
+                    const file = this.files[0];
+                    fileError.textContent = '';
 
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-}
-else
-{
-    <p class="text-danger">Lecturer profile not found. Please log in again.</p>
-}
+                    if (file) {
+                        const fileSize = file.size / 1024 / 1024; // MB
+                        const fileName = file.name;
+                        const fileExt = fileName.split('.').pop().toLowerCase();
+                        const allowedExts = ['pdf', 'docx', 'xlsx'];
 
-@if (ViewBag.Message != null)
-{
-    <p style="color:green">@ViewBag.Message</p>
-}
-@if (ViewBag.Error != null)
-{
-    <p style="color:red">@ViewBag.Error</p>
+                        if (!allowedExts.includes(fileExt)) {
+                            fileError.textContent = 'Only PDF, DOCX, and XLSX files are allowed.';
+                            this.value = '';
+                        } else if (fileSize > 5) {
+                            fileError.textContent = 'File size must be under 5MB.';
+                            this.value = '';
+                        }
+                    }
+                });
+            }
+
+            
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    let isValid = true;
+                    const file = fileInput.files[0];
+
+                   
+                    fileError.textContent = '';
+
+                    
+                    if (!file) {
+                        fileError.textContent = 'Please select a supporting document.';
+                        isValid = false;
+                    } else {
+                        const fileSize = file.size / 1024 / 1024;
+                        const fileName = file.name;
+                        const fileExt = fileName.split('.').pop().toLowerCase();
+                        const allowedExts = ['pdf', 'docx', 'xlsx'];
+
+                        if (!allowedExts.includes(fileExt)) {
+                            fileError.textContent = 'Only PDF, DOCX, and XLSX files are allowed.';
+                            isValid = false;
+                        } else if (fileSize > 5) {
+                            fileError.textContent = 'File size must be under 5MB.';
+                            isValid = false;
+                        }
+                    }
+
+                   
+                    const hours = parseFloat(hoursInput.value);
+                    const rate = parseFloat(rateInput.value);
+
+                    if (isNaN(hours) || hours < 0.5 || hours > 200) {
+                        isValid = false;
+                    }
+
+                    if (isNaN(rate) || rate < 1 || rate > 1000) {
+                        isValid = false;
+                    }
+
+                    if (!isValid) {
+                        e.preventDefault();
+                       
+                        fileInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    } else {
+                        
+                        submitButton.disabled = true;
+                        submitButton.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Submitting...';
+                    }
+                });
+            }
+
+            
+            window.addEventListener('pageshow', function() {
+                if (submitButton) {
+                    submitButton.disabled = false;
+                    submitButton.innerHTML = '<i class="fas fa-paper-plane me-2"></i>Submit Claim';
+                }
+            });
+        });
+    </script>
 }

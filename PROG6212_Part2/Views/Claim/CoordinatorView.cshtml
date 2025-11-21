@@ -1,39 +1,118 @@
 ﻿@model List<PROG6212_Part2.Models.Claim>
 
-<h2>Coordinator Review</h2>
-
-@if (!Model.Any())
-{
-    <p>No claims to review.</p>
+@{
+    ViewData["Title"] = "Coordinator View - Verify Claims";
 }
-else
-{
-    foreach (var claim in Model)
-    {
-        <div class="card mb-3">
-            <div class="card-body">
-                <p><strong>Lecturer:</strong> @claim.LecturerName</p>
-                <p><strong>Department:</strong> @claim.Department</p>
-                <p><strong>Month:</strong> @claim.Month</p>
-                <p><strong>Course:</strong> @claim.CourseCode - @claim.CourseTitle</p>
-                <p><strong>Hours Worked:</strong> @claim.HoursWorked</p>
-                <p><strong>Rate:</strong> R@claim.Rate</p>
-                <p><strong>Total Amount:</strong> R@claim.TotalAmount.ToString("F2")</p>
-                <p><strong>Status:</strong> @claim.Status</p>
-                <p><strong>Notes:</strong> @claim.Notes</p>
 
-                <form asp-action="Verify" method="post" class="d-inline">
-                    <input type="hidden" name="id" value="@claim.ClaimID" />
-                    <button type="submit" class="btn btn-sm btn-success">Verify</button>
-                </form>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow">
+                <div class="card-header bg-warning text-white d-flex justify-content-between align-items-center">
+                    <h3 class="card-title mb-0">
+                        <i class="fas fa-tasks me-2"></i>Claims Awaiting Verification
+                    </h3>
+                    <span class="badge bg-light text-warning fs-6">@Model.Count Claims</span>
+                </div>
+                <div class="card-body">
+                    @if (TempData["Success"] != null)
+                    {
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <i class="fas fa-check-circle me-2"></i>@TempData["Success"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                    }
 
-                <form asp-action="Reject" method="post" class="d-inline">
-                    <input type="hidden" name="id" value="@claim.ClaimID" />
-                    <button type="submit" class="btn btn-sm btn-danger">Reject</button>
-                </form>
-
-                <a asp-controller="Claim" asp-action="Download" asp-route-id="@claim.ClaimID" class="btn btn-sm btn-outline-primary">Download</a>
+                    @if (!Model.Any())
+                    {
+                        <div class="text-center py-5">
+                            <i class="fas fa-check-circle fa-3x text-muted mb-3"></i>
+                            <h4 class="text-muted">All Caught Up!</h4>
+                            <p class="text-muted">No claims awaiting verification.</p>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped">
+                                <thead class="table-warning">
+                                    <tr>
+                                        <th><i class="fas fa-hashtag me-1"></i>Claim ID</th>
+                                        <th><i class="fas fa-user me-1"></i>Lecturer</th>
+                                        <th><i class="fas fa-building me-1"></i>Department</th>
+                                        <th><i class="fas fa-calendar me-1"></i>Month</th>
+                                        <th><i class="fas fa-book me-1"></i>Course</th>
+                                        <th><i class="fas fa-clock me-1"></i>Hours</th>
+                                        <th><i class="fas fa-money-bill me-1"></i>Rate</th>
+                                        <th><i class="fas fa-calculator me-1"></i>Total Amount</th>
+                                        <th><i class="fas fa-file me-1"></i>Document</th>
+                                        <th><i class="fas fa-cog me-1"></i>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var claim in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <span class="badge bg-secondary">#@claim.ClaimID</span>
+                                            </td>
+                                            <td>@claim.LecturerName</td>
+                                            <td>@claim.Department</td>
+                                            <td>@claim.Month</td>
+                                            <td>
+                                                <div class="fw-bold">@claim.CourseCode</div>
+                                                <small class="text-muted">@claim.CourseTitle</small>
+                                            </td>
+                                            <td>
+                                                <span class="badge bg-info">
+                                                    <i class="fas fa-clock me-1"></i>@claim.HoursWorked hours
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <i class="fas fa-money-bill-wave me-1 text-success"></i>R @claim.Rate.ToString("N2")
+                                            </td>
+                                            <td>
+                                                <span class="fw-bold text-success">
+                                                    <i class="fas fa-calculator me-1"></i>R @claim.TotalAmount.ToString("N2")
+                                                </span>
+                                            </td>
+                                            <td>
+                                                @if (!string.IsNullOrEmpty(claim.DocumentName))
+                                                {
+                                                    <a href="@Url.Action("Download", "Claim", new { id = claim.ClaimID })"
+                                                       class="btn btn-sm btn-outline-primary" title="Download Document">
+                                                        <i class="fas fa-download me-1"></i> Download
+                                                    </a>
+                                                }
+                                            </td>
+                                            <td>
+                                                <div class="btn-group btn-group-sm">
+                                                    <form method="post" asp-action="Verify" class="d-inline">
+                                                        <input type="hidden" name="id" value="@claim.ClaimID" />
+                                                        @Html.AntiForgeryToken()
+                                                        <button type="submit" class="btn btn-success"
+                                                                onclick="return confirm('Are you sure you want to verify this claim?')">
+                                                            <i class="fas fa-check me-1"></i> Verify
+                                                        </button>
+                                                    </form>
+                                                    <form method="post" asp-action="Reject" class="d-inline">
+                                                        <input type="hidden" name="id" value="@claim.ClaimID" />
+                                                        @Html.AntiForgeryToken()
+                                                        <button type="submit" class="btn btn-danger"
+                                                                onclick="return confirm('Are you sure you want to reject this claim?')">
+                                                            <i class="fas fa-times me-1"></i> Reject
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                </div>
             </div>
         </div>
-    }
-}
+    </div>
+</div>

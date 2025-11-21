@@ -1,36 +1,120 @@
 ﻿@model List<PROG6212_Part2.Models.Claim>
+
 @{
-    var email = Context.Session.GetString("Email");
-    var lecturer = PROG6212_Part2.Controllers.LecturerController._lecturers
-        .FirstOrDefault(l => l.Email.ToLower() == email?.ToLower());
+    ViewData["Title"] = "My Claims";
 }
 
-<h2>Your Claims</h2>
-
-@if (lecturer != null)
-{
-    <p><strong>Logged in as:</strong> @lecturer.FullName (@lecturer.Email)</p>
-    <p><strong>Department:</strong> @lecturer.Department</p>
-}
-
-@if (!Model.Any())
-{
-    <div class="alert alert-info mt-4">No claims submitted yet.</div>
-}
-else
-{
-    foreach (var claim in Model)
-    {
-        <div class="card mb-3">
-            <div class="card-body">
-                <p><strong>Month:</strong> @claim.Month</p>
-                <p><strong>Course:</strong> @claim.CourseCode - @claim.CourseTitle</p>
-                <p><strong>Hours Worked:</strong> @claim.HoursWorked</p>
-                <p><strong>Rate:</strong> R@claim.Rate</p>
-                <p><strong>Total Amount:</strong> R@claim.TotalAmount.ToString("F2")</p>
-                <p><strong>Status:</strong> @claim.Status</p>
-                <a asp-controller="Claim" asp-action="Download" asp-route-id="@claim.ClaimID" class="btn btn-sm btn-outline-primary">Download</a>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                    <h3 class="card-title mb-0">
+                        <i class="fas fa-list-alt me-2"></i>My Claims
+                    </h3>
+                    <a href="@Url.Action("SubmitClaim")" class="btn btn-light btn-sm">
+                        <i class="fas fa-plus me-1"></i>New Claim
+                    </a>
+                </div>
+                <div class="card-body">
+                    @if (!Model.Any())
+                    {
+                        <div class="text-center py-5">
+                            <i class="fas fa-inbox fa-3x text-muted mb-3"></i>
+                            <h4 class="text-muted">No Claims Found</h4>
+                            <p class="text-muted">You haven't submitted any claims yet.</p>
+                            <a href="@Url.Action("SubmitClaim")" class="btn btn-primary">
+                                <i class="fas fa-plus me-1"></i>Submit Your First Claim
+                            </a>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th><i class="fas fa-hashtag me-1"></i>Claim ID</th>
+                                        <th><i class="fas fa-calendar me-1"></i>Month</th>
+                                        <th><i class="fas fa-book me-1"></i>Course</th>
+                                        <th><i class="fas fa-clock me-1"></i>Hours</th>
+                                        <th><i class="fas fa-money-bill me-1"></i>Rate</th>
+                                        <th><i class="fas fa-calculator me-1"></i>Total Amount</th>
+                                        <th><i class="fas fa-tag me-1"></i>Status</th>
+                                        <th><i class="fas fa-file me-1"></i>Document</th>
+                                        <th><i class="fas fa-calendar-day me-1"></i>Submitted Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var claim in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <span class="badge bg-secondary">#@claim.ClaimID</span>
+                                            </td>
+                                            <td>@claim.Month</td>
+                                            <td>
+                                                <div class="fw-bold">@claim.CourseCode</div>
+                                                <small class="text-muted">@claim.CourseTitle</small>
+                                            </td>
+                                            <td>
+                                                <span class="badge bg-info">
+                                                    <i class="fas fa-clock me-1"></i>@claim.HoursWorked hours
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <i class="fas fa-money-bill-wave me-1 text-success"></i>R @claim.Rate.ToString("N2")
+                                            </td>
+                                            <td>
+                                                <span class="fw-bold text-success">
+                                                    <i class="fas fa-calculator me-1"></i>R @claim.TotalAmount.ToString("N2")
+                                                </span>
+                                            </td>
+                                            <td>
+                                                @{
+                                                    var statusBadge = claim.Status switch
+                                                    {
+                                                        "Submitted" => "bg-warning",
+                                                        "Verified" => "bg-info",
+                                                        "Approved" => "bg-success",
+                                                        "Rejected" => "bg-danger",
+                                                        _ => "bg-secondary"
+                                                    };
+                                                    var statusIcon = claim.Status switch
+                                                    {
+                                                        "Submitted" => "fa-clock",
+                                                        "Verified" => "fa-check-circle",
+                                                        "Approved" => "fa-thumbs-up",
+                                                        "Rejected" => "fa-times-circle",
+                                                        _ => "fa-question-circle"
+                                                    };
+                                                }
+                                                <span class="badge @statusBadge">
+                                                    <i class="fas @statusIcon me-1"></i>@claim.Status
+                                                </span>
+                                            </td>
+                                            <td>
+                                                @if (!string.IsNullOrEmpty(claim.DocumentName))
+                                                {
+                                                    <a href="@Url.Action("Download", "Claim", new { id = claim.ClaimID })"
+                                                       class="btn btn-sm btn-outline-primary">
+                                                        <i class="fas fa-download me-1"></i>Download
+                                                    </a>
+                                                }
+                                            </td>
+                                            <td>
+                                                <small class="text-muted">
+                                                    <i class="fas fa-calendar-day me-1"></i>Just now
+                                                </small>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                </div>
             </div>
         </div>
-    }
-}
+    </div>
+</div>

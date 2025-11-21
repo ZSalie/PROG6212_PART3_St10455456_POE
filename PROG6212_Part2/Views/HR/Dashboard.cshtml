@@ -1,0 +1,398 @@
+﻿@model PROG6212_Part2.Models.HRDashboardViewModel
+
+@{
+    ViewData["Title"] = "HR Dashboard";
+}
+
+<div class="container mt-4">
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="display-6">
+                    <i class="fas fa-tachometer-alt me-2 text-primary"></i>HR Dashboard
+                </h1>
+                <div class="btn-group">
+                    <a href="@Url.Action("ViewAllClaims")" class="btn btn-outline-primary">
+                        <i class="fas fa-list me-1"></i>View All Claims
+                    </a>
+                    <a href="@Url.Action("LecturerClaimsSummary")" class="btn btn-outline-success">
+                        <i class="fas fa-chart-bar me-1"></i>Claims Summary
+                    </a>
+                    <a href="@Url.Action("ManageUsers")" class="btn btn-primary">
+                        <i class="fas fa-users-cog me-1"></i>Manage Users
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="fas fa-check-circle me-2"></i>@TempData["Success"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <i class="fas fa-exclamation-circle me-2"></i>@TempData["Error"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    <!-- Statistics Cards -->
+    <div class="row mb-4">
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                Total Claims
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@Model.TotalClaims</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-file-invoice fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                Approved Claims
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@Model.ApprovedClaims</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-check-circle fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-warning shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                Pending Claims
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@Model.SubmittedClaims</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-clock fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                Total Users
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                @(Model.TotalLecturers + Model.TotalCoordinators + Model.TotalManagers + Model.TotalHR)
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-users fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Row of Stats -->
+    <div class="row mb-4">
+        <div class="col-xl-2 col-md-4 mb-4">
+            <div class="card border-left-secondary shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">
+                                Lecturers
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@Model.TotalLecturers</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-chalkboard-teacher fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-2 col-md-4 mb-4">
+            <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                Coordinators
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@Model.TotalCoordinators</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-user-tie fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-2 col-md-4 mb-4">
+            <div class="card border-left-warning shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                Managers
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@Model.TotalManagers</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-user-cog fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-2 col-md-4 mb-4">
+            <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                HR Staff
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@Model.TotalHR</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-user-shield fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-2 col-md-4 mb-4">
+            <div class="card border-left-danger shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                                Rejected
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@Model.RejectedClaims</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-times-circle fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-2 col-md-4 mb-4">
+            <div class="card border-left-dark shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">
+                                Verified
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@Model.VerifiedClaims</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-check-double fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card shadow">
+                <div class="card-header bg-light">
+                    <h6 class="mb-0">
+                        <i class="fas fa-bolt me-2"></i>Quick Actions
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3 mb-3">
+                            <a href="@Url.Action("AddUser", new { userType = "lecturer" })" class="btn btn-outline-primary w-100 h-100 py-3">
+                                <i class="fas fa-user-plus fa-2x mb-2"></i>
+                                <br>
+                                <span>Add Lecturer</span>
+                            </a>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <a href="@Url.Action("ViewAllClaims")" class="btn btn-outline-success w-100 h-100 py-3">
+                                <i class="fas fa-list-ol fa-2x mb-2"></i>
+                                <br>
+                                <span>View All Claims</span>
+                            </a>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <a href="@Url.Action("LecturerClaimsSummary")" class="btn btn-outline-info w-100 h-100 py-3">
+                                <i class="fas fa-chart-pie fa-2x mb-2"></i>
+                                <br>
+                                <span>Generate Reports</span>
+                            </a>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <a href="@Url.Action("ManageUsers")" class="btn btn-outline-warning w-100 h-100 py-3">
+                                <i class="fas fa-cogs fa-2x mb-2"></i>
+                                <br>
+                                <span>System Settings</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Activity -->
+    <div class="row">
+        <div class="col-lg-6 mb-4">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h6 class="m-0 font-weight-bold">
+                        <i class="fas fa-chart-pie me-1"></i>Claims Status Overview
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <div class="chart-pie pt-4 pb-2">
+                        <canvas id="claimsStatusChart" width="100%" height="150"></canvas>
+                    </div>
+                    <div class="mt-4 text-center small">
+                        <span class="mr-2">
+                            <i class="fas fa-circle text-primary"></i> Submitted
+                        </span>
+                        <span class="mr-2">
+                            <i class="fas fa-circle text-info"></i> Verified
+                        </span>
+                        <span class="mr-2">
+                            <i class="fas fa-circle text-success"></i> Approved
+                        </span>
+                        <span class="mr-2">
+                            <i class="fas fa-circle text-danger"></i> Rejected
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+            <div class="card shadow">
+                <div class="card-header bg-success text-white">
+                    <h6 class="m-0 font-weight-bold">
+                        <i class="fas fa-users me-1"></i>User Distribution
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card bg-light mb-3">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-chalkboard-teacher fa-2x text-primary mb-2"></i>
+                                    <h2 class="text-primary">@Model.TotalLecturers</h2>
+                                    <p class="mb-0">Lecturers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-light mb-3">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-user-tie fa-2x text-success mb-2"></i>
+                                    <h2 class="text-success">@Model.TotalCoordinators</h2>
+                                    <p class="mb-0">Coordinators</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-light mb-3">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-user-cog fa-2x text-warning mb-2"></i>
+                                    <h2 class="text-warning">@Model.TotalManagers</h2>
+                                    <p class="mb-0">Managers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-light mb-3">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-user-shield fa-2x text-info mb-2"></i>
+                                    <h2 class="text-info">@Model.TotalHR</h2>
+                                    <p class="mb-0">HR Staff</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Claims Status Chart
+            var ctx = document.getElementById('claimsStatusChart').getContext('2d');
+            var claimsChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Submitted', 'Verified', 'Approved', 'Rejected'],
+                    datasets: [{
+                        data: [@Model.SubmittedClaims, @Model.VerifiedClaims, @Model.ApprovedClaims, @Model.RejectedClaims],
+                        backgroundColor: ['#ffc107', '#17a2b8', '#28a745', '#dc3545'],
+                        hoverBackgroundColor: ['#e0a800', '#138496', '#218838', '#c82333'],
+                        hoverBorderColor: "rgba(234, 236, 244, 1)",
+                    }],
+                },
+                options: {
+                    maintainAspectRatio: false,
+                    tooltips: {
+                        backgroundColor: "rgb(255,255,255)",
+                        bodyFontColor: "#858796",
+                        borderColor: '#dddfeb',
+                        borderWidth: 1,
+                        xPadding: 15,
+                        yPadding: 15,
+                        displayColors: false,
+                        caretPadding: 10,
+                    },
+                    legend: {
+                        display: false
+                    },
+                    cutoutPercentage: 80,
+                },
+            });
+        });
+    </script>
+}

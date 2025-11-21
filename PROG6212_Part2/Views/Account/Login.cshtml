@@ -1,18 +1,104 @@
-﻿@{
+﻿@model PROG6212_Part2.Models.LoginViewModel
+
+@{
     ViewData["Title"] = "Login";
 }
 
 <div class="container mt-5">
-    <h2 class="text-center">Login</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white text-center">
+                    <h3><i class="fas fa-university me-2"></i>College Claims System</h3>
+                    <p class="mb-0">Please sign in to continue</p>
+                </div>
+                <div class="card-body p-4">
+                    <form method="post" asp-action="Login" id="loginForm">
+                        @Html.AntiForgeryToken()
 
-    <form asp-action="Login" method="post" class="mt-4">
-        <label>Email:</label>
-        <input type="email" name="email" class="form-control" required /><br />
-        <button type="submit" class="btn btn-primary w-100">Login</button>
-    </form>
+                        @if (!ViewData.ModelState.IsValid)
+                        {
+                            <div class="alert alert-danger">
+                                @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                                {
+                                    <div>@error.ErrorMessage</div>
+                                }
+                            </div>
+                        }
 
-    @if (ViewBag.Error != null)
-    {
-        <p class="text-danger mt-3 text-center">@ViewBag.Error</p>
-    }
+                        <div class="mb-3">
+                            <label asp-for="Email" class="form-label">Email Address</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                <input asp-for="Email" class="form-control" placeholder="Enter your email" />
+                            </div>
+                            <span asp-validation-for="Email" class="text-danger small"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Password" class="form-label">Password</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                <input asp-for="Password" class="form-control" placeholder="Enter your password" />
+                            </div>
+                            <span asp-validation-for="Password" class="text-danger small"></span>
+                        </div>
+
+                        <div class="mb-3 form-check">
+                            <input asp-for="RememberMe" class="form-check-input" />
+                            <label asp-for="RememberMe" class="form-check-label">Remember me</label>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-sign-in-alt me-2"></i>Sign In
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="mt-4">
+                        <h6 class="text-center">Demo Accounts:</h6>
+                        <div class="row text-center">
+                            <div class="col-md-6">
+                                <small class="text-muted">
+                                    <strong>Lecturer:</strong><br>
+                                    zaara.salie@prog.ac.za<br>
+                                    lecturer123
+                                </small>
+                            </div>
+                            <div class="col-md-6">
+                                <small class="text-muted">
+                                    <strong>HR:</strong><br>
+                                    hr@college.ac.za<br>
+                                    hr123
+                                </small>
+                            </div>
+                        </div>
+                        <div class="row text-center mt-2">
+                            <div class="col-md-6">
+                                <small class="text-muted">
+                                    <strong>Coordinator:</strong><br>
+                                    thabo.mokoena@college.ac.za<br>
+                                    coordinator123
+                                </small>
+                            </div>
+                            <div class="col-md-6">
+                                <small class="text-muted">
+                                    <strong>Manager:</strong><br>
+                                    naledi.jacobs@college.ac.za<br>
+                                    manager123
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+}
